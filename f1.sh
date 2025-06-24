@@ -1,14 +1,9 @@
 #!/bin/bash
-echo "enter marks"
-read marks
-if [ $marks -gt 90 ]; then
-    echo "Distinction"
-elif [ $marks -ge 75 ]; then
-    echo "First class"
-elif [ $marks -ge 60 ]; then
-    echo "Second class"
-elif [ $marks -ge 35 ]; then
-    echo "Pass"
+echo "enter a number"
+read num
+if [ $((num % 2)) -eq 0 ]; then
+    echo "$num is even"
 else
-    echo "fail"
+    echo "$num is odd"
 fi
+
